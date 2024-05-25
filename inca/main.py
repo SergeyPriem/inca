@@ -35,6 +35,7 @@ initial_state = wf.init_state({
     "_my_private_element": 1337,
     "message": None,
     "counter": 26,
+    "currency": "USD"
 })
 
 _update_message(initial_state)
