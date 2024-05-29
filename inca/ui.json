@@ -1,0 +1,269 @@
+{
+    "metadata": {
+        "writer_version": "0.6.0rc5"
+    },
+    "components": {
+        "root": {
+            "id": "root",
+            "type": "root",
+            "content": {
+                "appName": "IncA",
+                "containerBackgroundColor": "#adadad"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "handlers": {},
+            "visible": true
+        },
+        "c0f99a9e-5004-4e75-a6c6-36f17490b134": {
+            "id": "c0f99a9e-5004-4e75-a6c6-36f17490b134",
+            "type": "page",
+            "content": {
+                "pageMode": "compact",
+                "emptinessColor": "#6b6b6b",
+                "key": "main"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "root",
+            "handlers": {},
+            "visible": true
+        },
+        "bebc5fe9-63a7-46a7-b0fa-62303555cfaf": {
+            "id": "bebc5fe9-63a7-46a7-b0fa-62303555cfaf",
+            "type": "header",
+            "content": {
+                "text": "@{my_app.title}"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "c0f99a9e-5004-4e75-a6c6-36f17490b134",
+            "handlers": {},
+            "visible": true
+        },
+        "j4s1emoh1zmc5mz7": {
+            "id": "j4s1emoh1zmc5mz7",
+            "type": "section",
+            "content": {
+                "title": "Add Incomes"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "c0f99a9e-5004-4e75-a6c6-36f17490b134",
+            "handlers": {},
+            "visible": true
+        },
+        "noga09jkvmr3h8a7": {
+            "id": "noga09jkvmr3h8a7",
+            "type": "columns",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "j4s1emoh1zmc5mz7",
+            "handlers": {},
+            "visible": true
+        },
+        "1ogdl3i65m63spqw": {
+            "id": "1ogdl3i65m63spqw",
+            "type": "column",
+            "content": {
+                "title": "Currency",
+                "width": ".7"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "noga09jkvmr3h8a7",
+            "handlers": {},
+            "visible": true
+        },
+        "ive96jd1tqrlofpw": {
+            "id": "ive96jd1tqrlofpw",
+            "type": "column",
+            "content": {
+                "title": "Amount (@{currency})",
+                "width": ".4",
+                "contentHAlign": "center"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "noga09jkvmr3h8a7",
+            "handlers": {},
+            "visible": true
+        },
+        "07nlt2yxf5hc0vt7": {
+            "id": "07nlt2yxf5hc0vt7",
+            "type": "horizontalstack",
+            "content": {
+                "contentHAlign": "start"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "1ogdl3i65m63spqw",
+            "handlers": {},
+            "visible": true
+        },
+        "ult36h3qlzapmepe": {
+            "id": "ult36h3qlzapmepe",
+            "type": "button",
+            "content": {
+                "text": "USD"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "07nlt2yxf5hc0vt7",
+            "handlers": {
+                "wf-click": "to_usd"
+            },
+            "visible": true
+        },
+        "n4nsy2d3ipfzlq35": {
+            "id": "n4nsy2d3ipfzlq35",
+            "type": "button",
+            "content": {
+                "text": "SUM"
+            },
+            "isCodeManaged": false,
+            "position": 1,
+            "parentId": "07nlt2yxf5hc0vt7",
+            "handlers": {
+                "wf-click": "to_sum"
+            },
+            "visible": true
+        },
+        "pufli3j47zbhhn9q": {
+            "id": "pufli3j47zbhhn9q",
+            "type": "button",
+            "content": {
+                "text": "EUR"
+            },
+            "isCodeManaged": false,
+            "position": 2,
+            "parentId": "07nlt2yxf5hc0vt7",
+            "handlers": {
+                "wf-click": "to_eur"
+            },
+            "visible": true
+        },
+        "juyy39g9b8066125": {
+            "id": "juyy39g9b8066125",
+            "type": "numberinput",
+            "content": {
+                "label": ""
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "jbsu92pf7tfmz2xk",
+            "handlers": {},
+            "visible": true
+        },
+        "jbsu92pf7tfmz2xk": {
+            "id": "jbsu92pf7tfmz2xk",
+            "type": "horizontalstack",
+            "content": {
+                "contentHAlign": "end"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "ive96jd1tqrlofpw",
+            "handlers": {},
+            "visible": true
+        },
+        "bnbfa480t9uyjdfq": {
+            "id": "bnbfa480t9uyjdfq",
+            "type": "column",
+            "content": {
+                "title": "Description (optional)",
+                "width": ".7"
+            },
+            "isCodeManaged": false,
+            "position": 2,
+            "parentId": "noga09jkvmr3h8a7",
+            "handlers": {},
+            "visible": true
+        },
+        "qnjfq9c2464llzu4": {
+            "id": "qnjfq9c2464llzu4",
+            "type": "button",
+            "content": {
+                "text": "UAH"
+            },
+            "isCodeManaged": false,
+            "position": 3,
+            "parentId": "07nlt2yxf5hc0vt7",
+            "handlers": {
+                "wf-click": "to_uah"
+            },
+            "visible": true
+        },
+        "5ce26gtd5pxvq971": {
+            "id": "5ce26gtd5pxvq971",
+            "type": "horizontalstack",
+            "content": {},
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "bnbfa480t9uyjdfq",
+            "handlers": {},
+            "visible": true
+        },
+        "6ehah0souyz7tsuh": {
+            "id": "6ehah0souyz7tsuh",
+            "type": "textinput",
+            "content": {
+                "label": ""
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "5ce26gtd5pxvq971",
+            "handlers": {},
+            "visible": true
+        },
+        "xry76kd4on9xjyyl": {
+            "id": "xry76kd4on9xjyyl",
+            "type": "column",
+            "content": {
+                "width": ".35"
+            },
+            "isCodeManaged": false,
+            "position": 3,
+            "parentId": "noga09jkvmr3h8a7",
+            "handlers": {},
+            "visible": true
+        },
+        "nvx144fm9pgo4z6h": {
+            "id": "nvx144fm9pgo4z6h",
+            "type": "button",
+            "content": {
+                "text": "Add"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "yzcqf6unuidit5ij",
+            "handlers": {},
+            "visible": true
+        },
+        "yzcqf6unuidit5ij": {
+            "id": "yzcqf6unuidit5ij",
+            "type": "horizontalstack",
+            "content": {
+                "contentPadding": "40px",
+                "contentHAlign": "center"
+            },
+            "isCodeManaged": false,
+            "position": 0,
+            "parentId": "xry76kd4on9xjyyl",
+            "handlers": {},
+            "visible": true
+        },
+        "cyer5wg21ftfeecf": {
+            "id": "cyer5wg21ftfeecf",
+            "type": "horizontalstack",
+            "parentId": "j4s1emoh1zmc5mz7",
+            "content": {
+                "contentPadding": "10px"
+            },
+            "handlers": {},
+            "position": 0,
+            "visible": true
+        }
+    }
+}
